@@ -1,0 +1,158 @@
+#work {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+	// background-image: url(/assets/images/bg2.jpg); 
+	// background-attachment: fixed;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	.boostCto .img { 
+		background-image: url(/assets/images/work/cto.png);
+		background-color: darkturquoise;
+	}
+	.bluebird .img { 
+		background-image: url(/assets/images/work/bluebird.png);
+		background-color: dimgrey;
+	}
+	.boost .img { 
+		background-image: url(/assets/images/work/boost.jpg);
+		background-color: honeydew;
+	}
+	.safetyPlan .img { 
+		// background-image: url(/assets/images/work/boost.jpg);
+		background-color: wheat;
+	}
+	.multiPanel .img { 
+		// background-image: url(/assets/images/work/multipanel.gif);
+		background-color: wheat;
+	}
+	.illustrations .img { 
+		// background-image: url(/assets/images/work/boost.jpg);
+		background-color: wheat;
+	}
+
+	header {
+		text-align: center;
+		h2 {
+			display: inline-block;
+			padding: 0.5rem 1rem;
+			background-color: white;
+		}
+	}
+
+	.thumbnails {
+		width: 48.5rem;
+		margin: auto;
+		ul {
+			width: 18rem;
+			display: inline-block;
+			margin: 0 3rem;
+			padding: 0;
+			li {
+				display: inline-block;
+			  position: relative;
+			  overflow: hidden;
+			  vertical-align: top;
+			  text-align: center;
+			  width: 17rem;
+		    height: 19rem;
+		    margin: 3rem 0;
+		    background-color: white;
+			  border: 0.4rem solid #fff;
+			  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+			  cursor: default;
+
+				.description {
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    overflow: hidden;
+			    top: 0;
+			    left: 0;
+
+			    h4 {
+			    	position: absolute;
+			    	bottom: 0.2rem;
+			    	width: 240px;
+			    }
+				}
+
+				// special effects
+
+				.img {
+					background-size: contain;
+					position: relative;
+					height: inherit;
+					width: 100%;
+					transform: scaleY(1);
+					transition: all 0.7s ease-in-out;
+				}
+
+				.description {
+			    background-color: white; 
+			    transition: all 0.5s linear;
+			    opacity: 0;
+				}
+
+				h3, h4, a, p {
+			    @include easeInSkale;
+				}
+
+				// hover effect
+
+				&:hover .img { 
+					transform: scale(10);
+				    opacity: 0;
+				}
+				&:hover .description { 
+					opacity: 1;
+				}																			 
+				&:hover h3,
+				&:hover h4,
+				&:hover p,
+				&:hover a.info{ 
+				    transform: scale(1);
+				    opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.description {
+	h3 {
+    margin: 2rem 1rem;
+		small {
+			display: block;
+			font-size: 0.75rem;
+			font-weight: normal;
+			padding-top: 0.5rem;
+		}
+	}
+
+	h4 {
+		font-size: 0.75rem;
+		margin: 0 1rem;
+		span {
+			display: block;
+		}
+	}
+
+	p {
+		font-size: 0.9rem;
+	  margin: 1rem 1rem;
+	}
+}
+
+@media (max-width: 795px) {
+  #work {
+  	.thumbnails {
+  		width: auto;
+  		ul {
+  			display: block;
+  			margin: auto;
+  		}
+		}
+  }
+}

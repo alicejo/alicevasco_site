@@ -1,0 +1,13 @@
+#aboutme {
+	align-items: center;	
+	article {
+		min-height: auto;
+		text-align: center;
+		background-color: white;
+		p {
+			max-width: 32rem;
+			line-height: 1.6;
+			margin: auto;
+		}
+	}
+}

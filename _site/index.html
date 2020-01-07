@@ -1,74 +1,455 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html>
+
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Your awesome title" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Your awesome title" />
-<script type="application/ld+json">
-{"url":"http://localhost:4000/","headline":"Your awesome title","name":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+  <title>Your awesome title</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta content="Responsive, Webdesign, UX, UI, Interfacedesign, Mobile, Design, CSS, HTML5, CSS3, Frontend, Webentwicklung, Webentwickler, Entwickler, Mediengestaltung, Mediengestalter, Berlin, Germany" name="keywords">
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Jan 4, 2020</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/2020/01/04/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
 
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+  <link rel="stylesheet" href="/css/application.css">
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://localhost:4000/feed.xml">
+  <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script type="text/javascript" src="assets/js/global.js"></script>
+</head>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
 
-  <div class="wrapper">
+  <body>
+  	<main>
+	    <section id="landingpage">
+	<header>
+		<h1 class="blub"> Alice Vasco </h1>
+		<h2> Portfolio </h2>
+	</header>
+<!-- 	<h3>
+		Scroll
+		<br>
+		<i>&#8595;</i>
+	</h3> -->
+</section>
 
-    <h2 class="footer-heading">Your awesome title</h2>
+<section id="aboutme">
+	<article>
+		<h2 class="blub"> About Me </h2>
+		<p> 
+			I'm a Berlin based UX/UI Designer and Frontend Developer. With more than 4 years experience in Responsive Webdesign, HTML, CSS, SASS and some Mobile experience.
+		</p>
+	</article>
+</section>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
+<section id="skills">
+	<article>
+		<div class="animate moveDown">
+			<header>
+				<h2>Skills</h2>
+				<ul class="tabs">
+					<li class="tab active" data-tab="tab-1">Web</li>
+					<li class="tab" data-tab="tab-2">Responsive</li>
+					<li class="tab" data-tab="tab-3">Mobile</li>
+					<li class="tab" data-tab="tab-4">Adobe</li>
+				</ul>
+			</header>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-</div>
+			<div class="content">
+				<!--        -->
+				<!--  Web   -->
+				<!--        -->
+				<div id="tab-1" class="tab-content active">
+					<ul class="progress">
+						<!-- HTML and CSS -->
+					  <li data-name="HTML5/CSS3" data-percent="80%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="504">
+					    	</path>
+					    </svg>
+					  </li>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
-    </div>
+				    <!-- SASS -->
+				    <li data-name="SASS" data-percent="70%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="441">
+					    	</path>
+					    </svg>
+					  </li>
 
-  </div>
+					  <!-- HAML -->
+					  <li data-name="HAML" data-percent="70%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="441">
+					    	</path>
+					    </svg>
+					  </li>
 
+					  <!-- JS -->
+					  <li data-name="Javascript" data-percent="30%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="189">
+					    	</path>
+					    </svg>
+					  </li>
+					</ul>
+				</div>
+
+				<!--         -->
+				<!--  Resp   -->
+				<!--         -->
+				<div id="tab-2" class="tab-content">
+					<ul class="progress">
+					  <!-- Bootstrap -->
+					  <li data-name="Bootstrap" data-percent="80%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="504">
+					    	</path>
+					    </svg>
+					  </li>
+
+					  <!-- Foundation -->
+					  <li data-name="Foundation" data-percent="60%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="378">
+					    	</path>
+					    </svg>
+					  </li>
+					</ul>
+				</div>
+
+				<!--        -->
+				<!-- Mobile -->
+				<!--        -->
+				<div id="tab-3" class="tab-content">
+					<ul class="progress">
+					  <li data-name="Android Style Guide" data-percent="70%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="441">
+					    	</path>
+					    </svg>
+					  </li>
+
+					  <li data-name="Android Studio" data-percent="40%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="252">
+					    	</path>
+					    </svg>
+					  </li>
+
+					  <li data-name="iOS Style Guide" data-percent="50%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="315">
+					    	</path>
+					    </svg>
+					  </li>
+
+					  <li data-name="Xcode" data-percent="15%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="94">
+					    	</path>
+					    </svg>
+					  </li>
+					</ul>
+				</div>
+
+				<!--       -->
+				<!-- Adobe -->
+				<!--       -->
+				<div id="tab-4" class="tab-content">
+					<ul class="progress">
+					  <li data-name="Illustrator" data-percent="70%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="441">
+					    	</path>
+					    </svg>
+					  </li>
+
+						<li data-name="Photoshop" data-percent="60%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="378">
+					    	</path>
+					    </svg>
+					  </li>
+
+					  <li data-name="InDesign" data-percent="80%">
+					  	<svg viewBox="-10 -10 220 220">
+						    <g fill="none" stroke-width="14" transform="translate(100,100)">
+						      <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)" />
+						      <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)" />
+						      <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)" />
+						      <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)" />
+						      <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)" />
+						      <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)" />
+						    </g>
+					    </svg>
+					    <svg viewBox="-10 -10 220 220">
+					    	<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="504">
+					    	</path>
+					    </svg>
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+				<!--  Defining Angle Gradient Colors  --> 
+				<!-- <svg width="0" height="0">
+				<defs>
+				  <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+				    <stop stop-color="#618099"/>
+				    <stop offset="100%" stop-color="#8e6677"/>
+				  </linearGradient>
+				  <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+				    <stop stop-color="#8e6677"/>
+				    <stop offset="100%" stop-color="#9b5e67"/>
+				  </linearGradient>
+				  <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+				    <stop stop-color="#9b5e67"/>
+				    <stop offset="100%" stop-color="#9c787a"/>
+				  </linearGradient>
+				  <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+				    <stop stop-color="#9c787a"/>
+				    <stop offset="100%" stop-color="#817a94"/>
+				  </linearGradient>
+				  <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+				    <stop stop-color="#817a94"/>
+				    <stop offset="100%" stop-color="#498a98"/>
+				  </linearGradient>
+				  <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+				    <stop stop-color="#498a98"/>
+				    <stop offset="100%" stop-color="#618099"/>
+				  </linearGradient>
+				</defs>
+				</svg> -->
+</section>
+
+<section id="work">
+	<header>
+		<h2>WORK</h2>
+	</header>
+	<div class="thumbnails">
+		<ul>
+			<li class="boostCto">
+				<div class="img">
+				</div>
+				<div class="description">
+			    <h3>boost CTO
+			    	<small>Boost Engagement FBX gGmbH</small>
+			    </h3> 
+			    <p> „Your Tech Team on Demand“
+			    	<br />
+			    	<a href="https://www.boost-project.com/de/cto" class="info">Visit Site</a></p>
+					<h4>
+						Design &amp; UI Dev
+						<span>Bootstrap | SASS | HAML</span>
+					</h4>
+				</div>
+			</li>
+
+			<li class="bluebird">
+				<div class="img">
+				</div>
+				<div class="description"> 
+			    <h3>BlueBird
+			    	<small>Blue Bird Technologies UG</small>
+			    </h3> 
+			    <p>
+			    	This App aims to track tension and emotions, among other factors, for a Data-Driven crisis prevention for people with mental disorders.
+			    	<a href="/mypageurl" class="info">View Image</a></p>  
+					<h4>
+						Design &amp; UI Dev
+						<span>Android Studio</span>
+					</h4>  
+				</div>
+			</li>
+		</ul>
+
+		<ul>
+			<li class="multiPanel">
+				<div class="img">
+					<video width="285" height="320" loop="" autoplay="">
+						<source src="/assets/images/work/multipanel.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<div class="description">
+			    <h3>A Multi-Panel Solution
+			    	<small> Gapfish GmbH</small>
+			    </h3>  
+			    <p>
+			    	One layout, several panels. A customizable layout for an online survey tool that easily adapts to the style-guidelines of the various Brands.
+			    	<a href="https://www.gallupforum.at/" class="info">Gallupforum</a>, <a href="https://www.spiegel-panel.de/" class="info">SpiegelPanel</a>, <a href="https://www.ilovemymedia.de/" class="info">ILoveMyMedia</a></p>
+					<h4>
+						Design &amp; UI Dev
+						<span>Bootstrap | SASS | HAML</span>
+					</h4>  
+				</div>
+			</li>
+
+			<li class="boost">
+				<div class="img">
+				</div>
+				<div class="description">
+			    <h3>boost
+			    	<small>Boost Engagement FBX gGmbH</small>
+			    </h3>  
+			    <p>
+			    	A Donation Platform where the User can Donate the Commission generated by Online Purchases on more than 500 Shops to a Charity of their choosing.
+			    	<a href="https://www.boost-project.com" class="info">Visit Site</a></p>
+					<h4>Design &amp; UI Dev
+						<span>Bootstrap | SASS | HAML | HTML</span>
+					</h4>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+	 	  <footer>
+	<h4>Feel free to contact me at:</h3>
+	<a href="https://www.linkedin.com/in/alice-vasco-4b7a8742/">
+		<img src="/assets/images/linkedin2.png">
+	</a>
+	<a href="mailto:alice.jo.vasco@gmail.com">alice.jo.vasco@gmail.com</a>
 </footer>
-</body>
+
+ 	  </main>
+  </body>
 
 </html>

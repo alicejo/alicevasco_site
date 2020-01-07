@@ -1,0 +1,22 @@
+footer {
+	color: white;
+	background-color: #333;
+	padding: 1rem 2rem 2rem;
+	box-shadow: inset 0px 0px 30px -8px rgba(0,0,0,0.80);
+	h4 {
+		color: #bcbcbc;
+		margin-bottom: 0.3rem;
+	}
+
+	a {
+		font-weight: normal;
+		font-size: 0.8rem;
+	}
+
+	a img {
+		float: right;
+		text-decoration: none;
+		width: 2rem;
+		margin-top: -6px;
+	}
+}
