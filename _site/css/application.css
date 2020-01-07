@@ -140,7 +140,7 @@ ul.tabs li.active { opacity: 1; }
 
 #work .safetyPlan .img { background-color: wheat; }
 
-#work .multiPanel .img { background-color: wheat; }
+#work .multiPanel .img { background-image: url(/assets/images/work/multipanel.jpg); background-color: wheat; }
 
 #work .illustrations .img { background-color: wheat; }
 
