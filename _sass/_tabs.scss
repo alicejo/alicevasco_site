@@ -1,0 +1,27 @@
+ul.tabs {
+  text-align: center;
+  list-style: none;
+  li {
+    display: inline-block;
+    opacity: 0.35;
+    cursor: pointer;
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+  &.active {
+    display: inherit;
+  }
+  ul.progress {
+    display: block;
+    margin: auto;
+  }
+}

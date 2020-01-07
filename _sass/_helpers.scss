@@ -1,0 +1,18 @@
+.clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin valign() {
+	position: absolute;
+	top: 50%;
+  transform: translate(0, -50%);
+}
+
+@mixin hvalign() {
+	display: block;
+	margin: 0 auto;
+}
