@@ -144,6 +144,14 @@ ul.tabs li.active { opacity: 1; }
 
 #work .illustrations .img { background-color: wheat; }
 
+#work .aufsland .img { background-image: url(/assets/images/work/aufsland.jpg); background-color: honeydew; }
+
+#work .blz .img { background-image: url(/assets/images/work/blz_app.jpg); background-color: honeydew; }
+
+#work .union_stadionheft .img { background-image: url(/assets/images/work/stadionheft_union.jpg); background-color: honeydew; }
+
+#work .mauer .img { background-image: url(/assets/images/work/mauer_ad.jpg); background-color: honeydew; }
+
 #work header { text-align: center; }
 
 #work header h2 { display: inline-block; padding: 0.5rem 1rem; background-color: white; }
