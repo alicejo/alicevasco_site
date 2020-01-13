@@ -5,7 +5,6 @@ main.centered_item {
 	padding-bottom: 2em;
 	justify-content: center;
 	align-items: center;
-	background-color: linen;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -20,4 +19,23 @@ main.centered_item {
 	img {
 		max-width: 250px;
 	}
+}
+
+.project_stadionheft {
+	background-color: #2a2a2a;
+	img {
+		max-width: 36em;
+		-webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		-moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+	}
+}
+
+@media screen and (max-width: 43em) {
+	.project_stadionheft {
+		img {
+			max-width: 75%;
+		}
+	}
+
 }
