@@ -1,0 +1,21 @@
+main.centered_item {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: linen;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	section {
+		text-align: center;
+	}
+}
+
+.project_epaper {
+	background-image: url(/assets/images/epaper/nextgen-bg.png);
+	img {
+		max-width: 250px;
+	}
+}

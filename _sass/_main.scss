@@ -1,3 +1,12 @@
+// Extends
+.background-image {
+	background-color: linen;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 html, body {
 	// font-family: 'alegraya', sans;
 	font-family: 'Khula', sans-serif;
@@ -8,18 +17,13 @@ html, body {
 	margin: 0;
 }
 
-main {
+main.home {
 	height: 100%;
-	section {
-		background-color: linen;
-		background-image: url("/assets/images/background.jpg");
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 }
 
+main.home section {
+	background-image: url("/assets/images/background.jpg");
+}
 
 article {
 	$articleShadow: 0px 3px 22px 0px rgba(0, 0, 0, 0.07);
