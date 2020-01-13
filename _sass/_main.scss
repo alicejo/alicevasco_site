@@ -1,12 +1,3 @@
-// Extends
-.background-image {
-	background-color: linen;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 html, body {
 	// font-family: 'alegraya', sans;
 	font-family: 'Khula', sans-serif;
@@ -19,10 +10,14 @@ html, body {
 
 main.home {
 	height: 100%;
-}
-
-main.home section {
-	background-image: url("/assets/images/background.jpg");
+	section {
+		background-image: url("/assets/images/background.jpg");
+		background-color: linen;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 article {
