@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 {% include lp_main.html %}
 {% include lp_aboutme.html %}

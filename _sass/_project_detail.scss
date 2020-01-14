@@ -1,0 +1,89 @@
+.backgroundImg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+main.centered_item {
+	@extend .backgroundImg;
+	min-height: 100%;
+	display: flex;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	justify-content: center;
+	align-items: center;
+	section {
+		text-align: center;
+	}
+}
+
+.project_epaper {
+	background-image: url(/assets/images/epaper/nextgen-bg.png);
+	img {
+		max-width: 250px;
+	}
+}
+
+.project_stadionheft {
+	background-color: #2a2a2a;
+	img {
+		max-width: 36em;
+		-webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		-moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+	}
+}
+
+@media screen and (max-width: 43em) {
+	.project_stadionheft {
+		img {
+			max-width: 75%;
+		}
+	}
+
+}
+
+.project_aufsland {
+	@extend .backgroundImg;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: 100%;
+	text-align: center;
+	background-image: url(/assets/images/aufsland/aufsland_background.png);
+
+	img {
+		max-width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1195px) {
+	.project_aufsland {
+		img {
+			max-width: 90%;
+		}
+	}
+}
+
+.project_mauer {
+	background-color: #4b4b4b;
+	.imgContainer {
+		display: inline-block;
+		img {
+			display: block;
+			max-width: 550px;
+			margin: 40px 20px;
+			-webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+			-moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+			box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		}
+
+	}
+
+	.imgContainer .imgCon1 {
+
+	}
+	.imgContainer .imgCon2 {
+
+	}
+}
