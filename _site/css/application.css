@@ -235,4 +235,10 @@ main.centered_item section { text-align: center; }
 
 @media screen and (max-width: 1195px) { .project_aufsland img { max-width: 90%; } }
 
+.project_mauer { background-color: #4b4b4b; }
+
+.project_mauer .imgContainer { display: inline-block; }
+
+.project_mauer .imgContainer img { display: block; max-width: 550px; margin: 40px 20px; -webkit-box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55); -moz-box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55); box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55); }
+
 /*# sourceMappingURL=application.css.map */

@@ -64,3 +64,26 @@ main.centered_item {
 		}
 	}
 }
+
+.project_mauer {
+	background-color: #4b4b4b;
+	.imgContainer {
+		display: inline-block;
+		img {
+			display: block;
+			max-width: 550px;
+			margin: 40px 20px;
+			-webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+			-moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+			box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.55);
+		}
+
+	}
+
+	.imgContainer .imgCon1 {
+
+	}
+	.imgContainer .imgCon2 {
+
+	}
+}
